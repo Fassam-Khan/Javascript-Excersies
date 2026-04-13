@@ -32,9 +32,36 @@ const leapYear = ()=>{
         alert("Not a leap")
     }
 
+}
+
+const withDraw = ()=>{
+    note10 = 0
+    note50 = 0
+    note100 = 0
+    let amount = +prompt("Enter amount:");
+    if(amount >= 100){
+        var note100 = Math.floor(amount / 100)
+        console.log(note100)
+        amount = amount % 100
+
+    }
+    if(amount >= 50 && amount < 100){
+        var note50 = Math.floor(amount / 50)
+        console.log( note50)
+        amount = amount % 50
+
+    }
+
+    if(amount < 50 && amount > 0 ){
+        var note10 = Math.floor(amount / 10)
+        console.log(note10)
+    }
 
 
-    
+    alert("you will have " + `${note100} hundred notes ${note50} fifty notes ${note10} ten notes`)
+ 
 
+
+   
 
 }
