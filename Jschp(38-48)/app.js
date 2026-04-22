@@ -60,8 +60,16 @@ const withDraw = ()=>{
 
     alert("you will have " + `${note100} hundred notes ${note50} fifty notes ${note10} ten notes`)
  
+}
 
+const areaOfTriangle = ()=>{
+    let a = +prompt("Enter triangle first length ");
+    let b = +prompt("Enter triangle Second Length ");
+    let c  = +prompt("Enter triangle Third Length ");
 
-   
+    s = (a + b + c) / 2;
 
+    area = s * (s - a) * (s - b) * (s - c)
+
+    alert("area is " + area)
 }
